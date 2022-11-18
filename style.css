@@ -1,0 +1,171 @@
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+
+body{
+     font-family: 'Poppins', sans-serif;
+     font-size: 62.5%;
+}
+section {
+     width: 100%;
+     display: flex;
+     align-items: center;
+     flex-direction: column;
+}
+
+h1 {
+     font-family: 'Lobster', cursive;
+     font-size: 40px;
+     margin: 30px;
+}
+
+.container {
+     display: flex;
+     transition: 0.5s;
+     width: 50%;
+     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+     padding: 1rem;
+     background: linear-gradient(to right, #fc0303, #fff30f, #0ffc03);
+     border-radius: 20px;
+     margin-top: 10px;
+     min-height: 350px;
+}
+
+.input-area,
+.result-area {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     width: 100%;
+}
+
+p {
+     margin: 1rem;
+}
+
+label,
+p {
+     font-size: 20px;
+     text-align: center;
+}
+
+input {
+     width: 80%;
+     border: none;
+     outline: none;
+     width: 60%;
+     text-align: center;
+     margin: .5rem;
+     box-shadow: 0 1px 10px rgb(0, 0, 0);
+     border-radius: 10px;
+     text-transform: uppercase;
+     padding: 0.5rem;
+     font-weight: bold;
+     background: transparent;
+     height: 40px;
+}
+
+.hide {
+     display: none;
+}
+
+
+.btn {
+     width: 80%;
+     height: 40px;
+     border: none;
+     font-size: 15px;
+     outline: none;
+     width: 60%;
+     margin: 0 1rem;
+     box-shadow: 0 1px 10px rgb(0, 0, 0);
+     border-radius: 10px;
+     padding: 0.5rem;
+     text-transform: uppercase;
+     font-weight: bold;
+     background: transparent;
+}
+
+.btn:hover {
+     background: #fff;
+     cursor: pointer;
+}
+
+.animation {
+     animation: zoomOut 1s infinite;
+}
+
+@keyframes zoomOut {
+     0% {
+          transform: scale(.8);
+     }
+
+     50% {
+          transform: scale(1);
+     }
+
+     100% {
+          transform: scale(.8);
+     }
+}
+
+/* keyframe animation for sad reaction */
+@keyframes sad {
+     0% {
+          transform: rotate(0deg);
+     }
+
+     50% {
+          transform: rotate(10deg);
+     }
+
+     100% {
+          transform: rotate(0deg);
+     }
+}
+
+.not-lucky {
+     animation: sad 1s infinite;
+}
+
+footer {
+     color: var(--primary-color);
+     font-family: 'Lobster', cursive;
+     text-align: center;
+     position: fixed;
+     bottom: 0;
+     width: 100%;
+     border-radius: 10px;
+}
+
+footer p {
+     margin: 0;
+     text-shadow: 0 2 10px rgba(0, 0, 0, 0.2);
+}
+
+footer a {
+     text-decoration: none;
+     color: var(--primary-color);
+}
+
+
+/* media query */
+@media screen and (max-width: 1100px) {
+     body{
+          font-size: xx-large;
+     }
+     h1{
+          font-size: 27px;
+          margin-bottom: 1rem;
+     }
+     .container {
+          width: 80%;
+     }
+     .input-area,
+     .result-area {
+          width: 100%;
+     }
+}
