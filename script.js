@@ -63,11 +63,11 @@ function isLucky() {
      const sum = calculateSum();
 
      if (sum % lucky === 0) {
-          setAndShowResult("Your birthday is lucky");
+          setAndShowResult("Your birthday is lucky 🥳");
           aniForLucky.classList.add("animation");
      }
      else {
-          setAndShowResult("Your birthday is not lucky");
+          setAndShowResult("Your birthday is not lucky 😔");
           aniForLucky.classList.add("not-lucky");
      }
 }
