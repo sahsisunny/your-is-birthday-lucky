@@ -73,8 +73,8 @@ function isLucky() {
 }
 
 function clickHandler() {
-     if (inputDate.value === "" || luckyNumber.value === "") {
-          setAndShowResult("Please enter both the fields");
+     if (inputDate.value === "" || luckyNumber.value === "" || luckyNumber.value <= 0 || inputDate.value === null) {
+          setAndShowResult("Please enter valid date and lucky number");
      }
      else {
           isLucky();
