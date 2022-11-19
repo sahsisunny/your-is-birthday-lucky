@@ -8,6 +8,7 @@ const luckyNumber = document.getElementById('lucky');
 
 const inputArea = document.querySelector('.input-area');
 const resultArea = document.querySelector('.result-area');
+const forMobile = document.querySelector('.mobile');
 
 const resultText = document.getElementById('result-text');
 
@@ -18,6 +19,7 @@ const aniForLucky = document.querySelector('.container');
 function showResult() {
      resultArea.classList.remove("hide");
      inputArea.classList.add("hide");
+     forMobile.style.display = "none";
 }
 
 let date;
