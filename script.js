@@ -75,6 +75,8 @@ function isLucky() {
 function clickHandler() {
      if (inputDate.value === "" || luckyNumber.value === "" || luckyNumber.value <= 0 || inputDate.value === null) {
           setAndShowResult("Please enter valid date and lucky number");
+          // set reset button text to back
+          resetBTN.innerText = "Back";
      }
      else {
           isLucky();
